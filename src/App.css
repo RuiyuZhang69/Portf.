@@ -1,0 +1,206 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Light grey background */
+  color: #333; /* Dark grey text */
+  line-height: 1.6;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.flex-container {
+  display: flex; /* Set the display property to flex */
+  justify-content: center; /* Align items with space around */
+  align-items: left; /* Center items vertically */
+  margin-right: 45px;
+  height: 20vh;
+  width: auto; /* Set container height to 100% of viewport height */
+}
+
+
+.flex-item {
+  justify-content: left;
+  margin-right: 80px;
+}
+.flex-item1 {
+  width: 300px; /* Set the width of each flex item */
+  height: 60px; /* Set the height of each flex item */
+  margin: 70px; /* Add margin for spacing between items */
+  margin-left: 60px;
+  margin-right:80px;
+  text-align: left;
+}
+.header {
+  background-color: #ff6b6b; /* Red header */
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.s1 {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Center the navigation items */
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* Dark grey text */
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ff6b6b; /* Red on hover */
+}
+
+.about,
+.projects {
+  background-color: #f9f9f9; /* Light grey section background */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.contact {
+  background-color: #f9f9f9; /* Light grey section background */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 40px 0;
+}
+
+.about h2,
+.projects h2,
+.contact h2 {
+  color: #333; /* Dark grey heading */
+}
+
+.project {
+  background-color: #ffffff; /* White project background */
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6b6b; /* Red button */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #e74c3c; /* Darker red on hover */
+}
+
+.contact .social-links {
+  margin-top: 20px;
+}
+
+.contact .social-links a {
+  margin-right: 10px;
+  display: inline-block;
+  color: #3498db; /* Blue social link */
+}
+
+p {
+  margin-bottom: 30px; 
+}
+
+.footer {
+  background-color: #3498db; /* Blue footer */
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #3498db; /* Blue button */
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover img {
+  transform: scale(1.1);
+}
+/* ... (previous styles) */
+
+/* About section styles */
+.about {
+  background-color: #fcfcfc; /* Light grey background */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+/* Projects section styles */
+.projects {
+  background-color: #f4f4f4; /* Light grey background */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+/* Contact section styles */
+.contact {
+  background-color: #ececec; /* Light grey background */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px 0;
+}
