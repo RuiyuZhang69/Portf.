@@ -49,7 +49,7 @@ const DSA = () => {
       <button style={styles.button} onClick={fetchRandomQuestion}>Get Another Random Question</button>
     </div>
     <div>
-      <img style={styles.car} src= {car} alt="Description of the image"/>
+      <img style={styles.car} src= {car} alt="https://imgflip.com/i/7abc56"/>
     </div>
     </body>
   );
