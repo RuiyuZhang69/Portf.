@@ -69,7 +69,7 @@ export default function Layout() {
 
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+          <p>&copy; 2024 Rui. All Rights Reserved.</p>
         </div>
       </footer>
     </main>
