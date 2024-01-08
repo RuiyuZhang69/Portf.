@@ -51,15 +51,11 @@ const DSA = () => {
 
 const styles = {
   container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
+    textAlign: 'center', // Center align the content
     padding: '20px',
     backgroundColor: '#f4f4f4',
     borderRadius: '8px',
     boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-    textAlign: 'center',
   },
   title: {
     fontSize: '24px',
@@ -72,7 +68,8 @@ const styles = {
     marginBottom: '15px',
   },
   button: {
-    marginTop: '10px', // Added margin top to separate buttons
+    marginTop: '10px',
+    marginLeft: '520px',
     padding: '10px 20px',
     fontSize: '16px',
     backgroundColor: '#007BFF',
@@ -80,10 +77,11 @@ const styles = {
     borderRadius: '5px',
     cursor: 'pointer',
     border: 'none',
-  }, button1: {
+  },
+  button1: {
     marginTop: '10px',
-    marginLeft:  '130px', // Added margin top to separate buttons
     padding: '10px 20px',
+    marginLeft: '580px',
     fontSize: '16px',
     backgroundColor: '#007BFF',
     color: '#fff',
