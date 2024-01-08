@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import leet from './leet.json';
 import car from './car.jpg'; // Import your image file
+import backArrow from './vector1.jpg'; // Import your back arrow image
 
 const DSA = () => {
   const [randomQuestion, setRandomQuestion] = useState(null);
@@ -30,33 +31,55 @@ const DSA = () => {
     }
   };
 
+  const handleBackButtonClick = () => {
+    // Handle the back button click, for example, by navigating back in your application
+    // You can use React Rfouter or any other navigation method here
+    window.history.back();
+
+  };
+
   useEffect(() => {
     fetchRandomQuestion();
   }, []);
 
   return (
     <body>
-    <div style={styles.container}>
-      <h1 style={styles.title}>Random Question</h1>
-      {randomQuestion ? (
-        <p style={styles.question}>
-          Question Title Slug: {randomQuestion}
-          <button style={styles.button1} onClick={handleButtonClick}>Open Problem</button>
-        </p>
-      ) : (
-        <p style={styles.noData}>No data available.</p>
-      )}
-      <button style={styles.button} onClick={fetchRandomQuestion}>Get Another Random Question</button>
-    </div>
-    <div>
-      <img style={styles.car} src= {car} alt="https://imgflip.com/i/7abc56"/>
-    </div>
+      <div style={styles.container}>
+        {/* Back Button */}
+        <div style={styles.backButton1}
+>HOME </div>
+        <img
+          src={backArrow}
+          alt="Back"
+          text = "Home"
+          style={styles.backButton}
+          onClick={handleBackButtonClick}
+        />
+        <h1 style={styles.title}>Random Question</h1>
+        {randomQuestion ? (
+          <p style={styles.question}>
+            Question Title Slug: {randomQuestion}
+            <button style={styles.button1} onClick={handleButtonClick}>
+              Open Problem
+            </button>
+          </p>
+        ) : (
+          <p style={styles.noData}>No data available.</p>
+        )}
+        <button style={styles.button} onClick={fetchRandomQuestion}>
+          Get Another Random Question
+        </button>
+      </div>
+      <div>
+        <img style={styles.car} src={car} alt="https://imgflip.com/i/7abc56" />
+      </div>
     </body>
   );
 };
 
 const styles = {
   container: {
+    position: 'relative',
     textAlign: 'center', // Center align the content
     padding: '20px',
     backgroundColor: '#f4f4f4',
@@ -69,8 +92,8 @@ const styles = {
     marginBottom: '15px',
   },
   car: {
-    marginLeft: '410px'
-  }, 
+    marginLeft: '410px',
+  },
   question: {
     fontSize: '18px',
     color: '#555',
@@ -101,6 +124,23 @@ const styles = {
   noData: {
     fontSize: '18px',
     color: '#ff0000',
+  },
+  backButton: {
+    position: 'absolute',
+    top: '10px',
+    left: '10px',
+    height: '40px', 
+    width: '40px',
+    cursor: 'pointer',
+  },
+
+  backButton1: {
+    position: 'absolute',
+    top: '15px',
+    left: '60px',
+    height: '40px', 
+    width: '40px',
+    cursor: 'pointer',
   },
 };
 
