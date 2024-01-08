@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import leet from './leet.json';
+import car from './car.jpg'; // Import your image file
 
 const DSA = () => {
   const [randomQuestion, setRandomQuestion] = useState(null);
@@ -34,6 +35,7 @@ const DSA = () => {
   }, []);
 
   return (
+    <body>
     <div style={styles.container}>
       <h1 style={styles.title}>Random Question</h1>
       {randomQuestion ? (
@@ -46,6 +48,10 @@ const DSA = () => {
       )}
       <button style={styles.button} onClick={fetchRandomQuestion}>Get Another Random Question</button>
     </div>
+    <div>
+      <img style={styles.car} src= {car} alt="Description of the image"/>
+    </div>
+    </body>
   );
 };
 
@@ -62,6 +68,9 @@ const styles = {
     color: '#333',
     marginBottom: '15px',
   },
+  car: {
+    marginLeft: '410px'
+  }, 
   question: {
     fontSize: '18px',
     color: '#555',
