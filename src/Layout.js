@@ -60,7 +60,7 @@ export default function Layout() {
           <h2>Contact</h2>
           <p>Email: ruizhangslc2017@gmail.com</p>
           <div className="social-links">
-            <a href="https://leetcode.com/Rui179/" target="_blank">
+            <a href="https://leetcode.com/Rui179/" target="_blank" rel="noopener noreferrer">
               <button className="social-button">LeetCode</button>
             </a>
           </div>
