@@ -50,7 +50,12 @@ export default function Layout() {
           <div className="project">
             <h3>StorageScholarsChat</h3>
             <p>React proj using Websockets and Maps API to allow people to chat about renting storage spaces</p>
-            <a href="https://github.com/RuiyuZhang69" className="btn">View Project</a>
+            <a href="https://github.com/RuiZhang-kwf8/StorageScholars.git" className="btn">View Project</a>
+          </div>
+          <div className="project">
+            <h3>RideShare</h3>
+            <p>React Native proj using Expo Go and Firebase to allow people to find ubers to places</p>
+            <a href="https://github.com/UVA-Rideshare" className="btn">View Project</a>
           </div>
         </div>
       </section>
