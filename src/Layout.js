@@ -20,6 +20,7 @@ export default function Layout() {
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
               <Link to="/dsa">Practice Your DSA</Link>
+              <Link to="/keepingaccountable">Training regimen</Link>
             </ul>
           </nav>
         </div>
